@@ -22,7 +22,7 @@ En lugar de consejos genéricos, AlterEGO te dice **qué hacer**, en qué orden 
 
 #### 2. Sobre Nosotros (about.html)
 - Historia y propósito
-- Misión, Visión y Valores
+- Misión
 
 #### 3. Contacto (contact.html)
 - Formulario completo de contacto
@@ -35,11 +35,4 @@ En lugar de consejos genéricos, AlterEGO te dice **qué hacer**, en qué orden 
 - **HTML5** Semántico
 - **CSS3** 
 - Diseño **100% Responsive**
-
--
-
-## Autor
-**AlterEGO Project**  
-Tu copiloto existencial con Inteligencia Artificial.
-
 ---

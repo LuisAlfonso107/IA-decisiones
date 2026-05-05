@@ -13,7 +13,7 @@ body {
     min-height: 100vh;
 }
 
-
+ /* Header */
 .header {
     background: rgba(10, 10, 26, 0.95);
     padding: 1.2rem 5%;
@@ -49,7 +49,7 @@ body {
     color: #00f0ff;
 }
 
-/*  MAIN */
+/*  Main*/
 main {
     max-width: 75rem;
     margin: 0 auto;
@@ -127,7 +127,7 @@ main {
 .analizamos img      { order: 1; }
 .analizamos .texto   { order: 2; }
 
-/*FOOTER */
+/*Footer */
 footer {
     background: #05050f;
     border-top: 1px solid rgba(0, 240, 255, 0.2);
@@ -172,7 +172,7 @@ footer p:last-child {
     font-size: 0.95rem;
 }
 
-/* MEDIA QUERY */
+/* Media queries */
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
