@@ -1,0 +1,211 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #ebecff 0%, #0a0a2a 100%);
+    color: #ffffff;
+    font-family:Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+header {
+    background: rgba(10, 10, 26, 0.95);
+    padding: 1.3rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+header h1 {
+    font-size: 2.4rem;
+    background: linear-gradient(90deg, #00f0ff, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2.2rem;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #00f0ff;
+}
+
+/* FORMULARIO */
+main {
+    max-width: 700px;
+    margin: 5rem auto;
+    padding: 1rem 5%;
+}
+
+.contacto {
+    font-size: 2.6rem;
+    color: #000000;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 2rem;
+    
+}
+
+
+form {
+    background: rgba(15, 15, 40, 0.7);
+    border: 1px solid ;
+    border-radius: 16px;
+    padding: 1rem 3rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+label {
+    display: block;
+    margin: 2.4rem 0 0.6rem;
+    color: #00f0ff;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 14px 16px;
+    background: rgba(10, 10, 35, 0.8);
+    border: 1px solid rgba(0, 240, 255, 0.25);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #00f0ff;
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
+}
+
+textarea {
+    min-height: 10rem;
+    resize: vertical;
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+    width: auto;
+    accent-color: #00f0ff;
+    margin-right: rem;
+}
+
+input[type="checkbox"] + label {
+    display: inline;
+    color: #ccc;
+    font-weight: normal;
+}
+
+/* Botón */
+button {
+    margin-top: 2.5rem;
+    width: 100%;
+    padding: 1rem;
+    background: #00f0ff;
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+    background: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(0, 240, 255, 0.5);
+}
+
+button:disabled {
+    background: #444;
+    color: #888;
+    cursor: not-allowed;
+}
+
+/* FOOTER*/
+footer {
+    background: #05050f;
+    border-top: 1px solid rgba(0, 240, 255, 0.2);
+    padding: 4rem 5% 2.5rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+footer h1 {
+    font-size: 2.3rem;
+    background: linear-gradient(90deg, #00f0ff, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.5rem;
+}
+
+footer p:first-of-type {
+    color: #00f0ff;
+    margin-bottom: 1.5rem;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    margin: 2rem 0;
+}
+
+footer nav a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer nav a:hover {
+    color: #00f0ff;
+}
+
+footer p:last-child {
+    opacity: 0.6;
+    font-size: 0.95rem;
+    margin-top: 2rem;
+}
+
+/*MEDIA QUERY */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem 5%;
+    }
+    
+    header nav ul {
+        gap: 1.6rem;
+    }
+    
+    form {
+        padding: 2rem 1.8rem;
+    }
+    
+    main {
+        margin: 3rem auto;
+    }
+}
