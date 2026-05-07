@@ -24,7 +24,7 @@ header {
     gap: 1rem;
 }
 
-header h1 {
+header h2 {
     font-size: 2.4rem;
     background: linear-gradient(90deg, #00f0ff, #ffffff);
     -webkit-background-clip: text;
@@ -48,6 +48,53 @@ header nav a {
 header nav a:hover {
     color: #00f0ff;
 }
+
+/* HEADER */
+.header {
+    background: rgba(10, 10, 26, 0.95);
+    padding: 1.2rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    position: relative;
+}
+
+.header h1 {
+    font-size: 2.4rem;
+    background: linear-gradient(90deg, #00f0ff, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+.header .nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+.header .nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.header .nav a:hover {
+    color: #00f0ff;
+}
+
+.HoraFecha {
+    color: #000000;
+    font-weight: 500;
+    transition: color 0.3s;
+    background-color: #00f0ff;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
 
 /*Main  */
 main {
@@ -126,7 +173,7 @@ footer p:last-child {
 }
 
 /* Media queries */
-@media (max-width: 768px) {
+@media (max-width: 750px) {
     header {
         flex-direction: column;
         text-align: center;
@@ -147,5 +194,62 @@ footer p:last-child {
     
     main {
         margin: 3rem auto;
+    }
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #00f0ff;
+    transition: 0.3s;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .header .nav {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: rgba(10, 10, 26, 0.98);
+        padding: 1rem 5%;
+    }
+
+    .header .nav.active {
+        display: block;
+    }
+
+    .header .nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .HoraFecha {
+        margin-top: 1rem;
     }
 }

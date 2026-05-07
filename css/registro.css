@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #ebecff 0%, #0a0a2a 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+.header {
+    background: rgba(10, 10, 26, 0.95);
+    padding: 1.2rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    position: relative;
+}
+
+.header h2 {
+    font-size: 2.4rem;
+    background: linear-gradient(90deg, #00f0ff, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+.header .nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+.header .nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.header .nav a:hover {
+    color: #00f0ff;
+}
+
+.HoraFecha {
+    color: #000000;
+    font-weight: 500;
+    transition: color 0.3s;
+    background-color: #00f0ff;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+
+/* CONTENEDOR */
+.registro-container {
+    width: 100%;
+    max-width: 500px;
+    background: rgba(10, 10, 26, 0.92);
+    padding: 3rem;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 240, 255, 0.2);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5);
+    margin: auto;
+}
+
+
+.registro-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+    background: linear-gradient(90deg, #00f0ff, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.input-group label {
+    margin-bottom: 0.5rem;
+    color: #00f0ff;
+    font-weight: 600;
+}
+
+
+.input-group input {
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+    font-size: 1rem;
+    border: 1px solid transparent;
+    transition: 0.3s ease;
+}
+
+
+.input-group input::placeholder {
+    color: #cfcfcf;
+}
+
+
+.input-group input:focus {
+    border: 1px solid #00f0ff;
+    box-shadow: 0 0 12px rgba(0, 240, 255, 0.4);
+}
+
+
+.btn-registro {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #00f0ff, #0077ff);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
+.btn-registro:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 240, 255, 0.35);
+}
+
+
+.extra {
+    margin-top: 1.5rem;
+    text-align: center;
+    color: #d6d6d6;
+}
+
+.extra a {
+    color: #00f0ff;
+    text-decoration: none;
+}
+
+.extra a:hover {
+    text-decoration: underline;
+}
+
+@media(max-width:600px) {
+
+    .registro-container {
+        padding: 2rem;
+    }
+
+    .registro-container h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #00f0ff;
+    transition: 0.3s;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .header .nav {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: rgba(10, 10, 26, 0.98);
+        padding: 1rem 5%;
+    }
+
+    .header .nav.active {
+        display: block;
+    }
+
+    .header .nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .HoraFecha {
+        margin-top: 1rem;
+    }
+}

@@ -9,16 +9,28 @@
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <h1>AlterEGO</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../html/about.html">Sobre nosotros</a></li>
-                <li><a href="../html/contact.html">Contacto</a></li>
+    <header class="header">
+        <h2>AlterEGO</h2>
+        
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    
+        <nav class="nav" id="nav">
+            <ul class="ul">
+                <li class="li"><a class="a" href="../index.html">Inicio</a></li>
+                <li class="li"><a class="a" href="about.html">Sobre nosotros</a></li>
+                <li class="li"><a class="a" href="contact.html">Contacto</a></li>
+                <li class="li"><a class="a" href="login.html">Iniciar sesión</a></li>
+                <div class="HoraFecha">
+                    <p>Fecha: <span id="fecha"></span></p>
+                    <p>Hora: <span id="hora"></span></p>
+                    
+                </div>
             </ul>
         </nav>
-        
     </header>
 
     <!-- Main -->
@@ -52,10 +64,10 @@
             <label for="message">Mensaje</label>
             <textarea id="message" name="message"></textarea>
 
-            <input type="checkbox" id="newsletter" name="newsletter">
-            <label for="newsletter">Política de privacidad</label>
+            <input type="checkbox" id="politicas" name="politicas">
+            <label for="politicas">Acepto las políticas de privacidad</label>
 
-            <button type="submit" value="Enviar" >Enviar</button>
+            <button id="botonEnviar" type="submit" value="Enviar" disabled >Enviar</button>
         </form>
         
     </main>
@@ -76,4 +88,6 @@
     </footer>
     
 </body>
+
+<script src="/js/index.js"></script>
 </html>

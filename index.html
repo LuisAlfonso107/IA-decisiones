@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IA Decisiones</title>
+    <title>Copiloto existencial</title>
+    <meta name="description" content="AlterEGO es una inteligencia artificial diseñada para actuar como tu copiloto existencial. Te ayudamos a tomar las decisiones más importantes de tu vida">
     <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
@@ -11,12 +12,23 @@
     <!-- Header-->
     <header class="header">
         <h1>AlterEGO</h1>
+        
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     
-        <nav class="nav">
+        <nav class="nav" id="nav">
             <ul class="ul">
                 <li class="li"><a class="a" href="index.html">Inicio</a></li>
                 <li class="li"><a class="a" href="html/about.html">Sobre nosotros</a></li>
                 <li class="li"><a class="a" href="html/contact.html">Contacto</a></li>
+                <li class="li"><a class="a" href="html/login.html">Iniciar sesión</a></li>
+                <div class="HoraFecha"> 
+                    <p> <span id="fecha"></span></p>
+                    <p>Hora: <span id="hora"></span></p>
+                </div>
             </ul>
         </nav>
 
@@ -44,11 +56,11 @@
     En segundos procesa todas tus opciones, evalúa las consecuencias a largo plazo y te entrega un plan de acción claro, concreto y personalizado para tomar la mejor decisión posible en cada momento importante de tu vida.</p>
     </div>
     
-    <img src="https://fepropaz.com/wp-content/uploads/2023/07/2-4.jpg" alt="imagen-h3-1">
+    <img id="cambioImagen1"src="https://fepropaz.com/wp-content/uploads/2023/07/2-4.jpg" alt="imagen-h3-1">
 </div>
 
  <div class="analizamos">
-    <img src="https://fepropaz.com/wp-content/uploads/2023/07/4-4.jpg" alt="imagen-h3-2">
+    <img id="cambioImagen2" src="https://fepropaz.com/wp-content/uploads/2023/07/4-4.jpg" alt="imagen-h3-2">
     
     <div class="texto">
         <h3>Analizamos tus opciones</h3>
@@ -75,4 +87,7 @@
 
 
 </body>
+
+<script src="js/index.js"></script>
+
 </html>

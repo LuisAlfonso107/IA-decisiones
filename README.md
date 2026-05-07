@@ -30,9 +30,21 @@ En lugar de consejos genéricos, AlterEGO te dice **qué hacer**, en qué orden 
 
 ---
 
+#### 4. Funcionalidades de JS
+
+- Validación de Login
+- Muestra la hora y fecha y dia de la semana 
+- En la pagina de contacto se desabilita el boton de envias solo si se aceptan las politicas de privacidad
+-Cambio de imagnenes en el inicio cuando se pasa el mause.
+- Menu de hamburguesa en responsive.
+-.
+
+---
+
 ## Tecnologías Utilizadas
 
 - **HTML5** Semántico
 - **CSS3** 
+- **JavaScript** 
 - Diseño **100% Responsive**
 ---

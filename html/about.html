@@ -10,17 +10,28 @@
 <body>
     
 
-    <header>
-        <h1>AlterEGO</h1>
+    <header class="header">
+        <h2>AlterEGO</h2>
+        
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../html/about.html">Sobre nosotros</a></li>
-                <li><a href="../html/contact.html">Contacto</a></li>
+        <nav class="nav" id="nav">
+            <ul class="ul">
+                <li class="li"><a class="a" href="../index.html">Inicio</a></li>
+                <li class="li"><a class="a" href="about.html">Sobre nosotros</a></li>
+                <li class="li"><a class="a" href="contact.html">Contacto</a></li>
+                <li class="li"><a class="a" href="login.html">Iniciar sesión</a></li>
+                <div class="HoraFecha">
+                     <p>Fecha: <span id="fecha"></span></p>
+                    <p >Hora: <span id="hora"></span></p>
+
+                </div>
             </ul>
         </nav>
-        
     </header>
 
     <main>
@@ -51,6 +62,8 @@
 
 
     </footer>
+
+    <script src="../js/index.js"></script>
 
 </body>
 </html>
